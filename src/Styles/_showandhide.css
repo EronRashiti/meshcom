@@ -1,0 +1,33 @@
+.elements{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    background: none;
+    border: none;
+    opacity: 1;
+}
+.elements-show{
+    display: block;
+    text-align: left;
+    border-bottom: .5px solid #0d0d0d;
+    padding-bottom: 1.5rem;
+    margin-top: 1.5rem;
+    transition: all 0.4s ease-out;
+  opacity: 0.8;
+}
+#elements-title{
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: #0d0d0d;
+}
+#elements-text{
+    font-size: 1rem;
+    font-weight: 400;
+    padding-top: .5rem;
+    cursor: default;
+}
+.show-btn{
+    background: none;
+    border: none;
+    color: #F21F59;
+}

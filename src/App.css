@@ -1,38 +1,49 @@
-.App {
-  text-align: center;
+@import './Styles/_navbar';
+@import './Styles/_sidebar.css';
+@import './Styles/_main.css';
+@import './Styles/_home.css';
+@import './Styles/_showandhide.css';
+@import './Styles/_contacthome.css';
+@import './Styles/_contactarea.css';
+@import './Styles/_footer.css';
+@import './Styles/_about.css';
+@import './Styles/_services.css';
+@import './Styles/_contact.css';
+@import './Styles/_survey.css';
+@import './Styles/_singleservice.css';
+
+
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Raleway', sans-serif;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body::-webkit-scrollbar{
+  width: .5rem;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+body::-webkit-scrollbar-thumb{
+  background-color: #00507D;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+body::-webkit-scrollbar-track{
+  background-color: #011126;
 }
 
-.App-link {
-  color: #61dafb;
+.container-section3{
+  margin-left: 20%;
+  margin-right: 20%;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.video-container{
+  margin-left: 10%;
+  margin-right: 10%;
 }
+
+.container-services{
+  margin-left: 5%;
+  margin-right: 5%;
+}
+

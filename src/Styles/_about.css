@@ -1,0 +1,87 @@
+.about-hero{
+    height: 100vh;
+    background-image: url(../Assets/about-hero-bg.jpg);
+    background-size: cover;
+}
+.team{
+    position: absolute;
+    width: 70%;
+    left: 15%;
+    bottom: 0;
+    opacity: .75;
+}
+.about-gradient{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background: rgb(1,17,38);
+    background: linear-gradient(0deg, rgba(1,17,38,1) 0%, rgba(1,17,38,0.25) 100%);
+}
+.about-hero-title{
+    text-align: right;
+    color: #fff;
+    font-size: 7rem;
+    font-weight: 600;
+    position: absolute;
+    right: 2%;
+    top: 20%;
+}
+.immer-für-dich-da{
+    color: #fff;
+    font-size: 1.75rem;
+    font-weight: 100;
+    opacity: .5;
+    position: absolute;
+    bottom: 5%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.immer-für-dich-da{
+         -webkit-animation: blink-2 1.5s cubic-bezier(0.950, 0.050, 0.795, 0.035) infinite both;
+	        animation: blink-2 1.5s cubic-bezier(0.950, 0.050, 0.795, 0.035) infinite both;
+}
+@keyframes immer-für-dich-da {
+    0% {
+        opacity: 1;
+      }
+      50% {
+        opacity: 0.2;
+      }
+      100% {
+        opacity: 1;
+      }
+    }
+    @keyframes blink-2 {
+      0% {
+        opacity: 1;
+      }
+      50% {
+        opacity: 0.2;
+      }
+      100% {
+        opacity: 1;
+      } 
+  }
+/* SECTION 1 START */
+.about-section1{
+    height: auto;
+    padding: 10%;
+    background-color: #011126;
+}
+#about-section1-text1{
+    color: #fff;
+    font-size: 1.25rem;
+    text-transform: lowercase;
+    font-weight: 100;
+    letter-spacing: .1rem;
+    line-height: 1.75rem;
+}
+#about-section1-text2{
+    color: #fff;
+    font-size: 1.25rem;
+    font-weight: 400;
+    letter-spacing: 0.12rem;
+    line-height: 1.75rem;
+    margin-top: 3rem;
+}
+/* SECTION 1 END */

@@ -6,9 +6,21 @@
     "@testing-library/jest-dom": "^5.14.1",
     "@testing-library/react": "^11.2.7",
     "@testing-library/user-event": "^12.8.3",
+    "@trendmicro/react-sidenav": "^0.5.0",
+    "emailjs-com": "^3.2.0",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
+    "react-icon": "^1.0.0",
+    "react-icons": "^4.2.0",
+    "react-player": "^2.9.0",
+    "react-reveal": "^1.2.2",
+    "react-router-dom": "^5.2.0",
     "react-scripts": "4.0.3",
+    "react-simple-image-slider": "^2.1.2",
+    "react-text-transition": "^1.3.0",
+    "reactstrap": "^8.9.0",
+    "survey-react": "^1.8.63",
+    "typescript": "^4.3.5",
     "web-vitals": "^1.1.2"
   },
   "scripts": {
@@ -34,5 +46,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "@types/reactstrap": "^8.7.2"
   }
 }

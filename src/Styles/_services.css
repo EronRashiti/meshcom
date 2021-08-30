@@ -1,0 +1,241 @@
+.services-hero{
+    height: 100vh;
+    background-image: url(../Assets/services-hero-bg.jpg);
+    background-size: cover;
+}
+.services-gradient{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background: rgb(1,17,38);
+    background: linear-gradient(0deg, rgba(1,17,38,1) 0%, rgba(1,17,38,0.25) 50%);
+}
+.services-hero-title{
+    text-align: right;
+    color: #fff;
+    font-size: 7rem;
+    font-weight: 600;
+    position: absolute;
+    right: 2%;
+    top: 20%;
+}
+.services-hero-text{
+    color: #fff;
+    font-size: 1.75rem;
+    font-weight: 100;
+    opacity: .5;
+    position: absolute;
+    bottom: 5%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+/* SECTION 1 START */
+.services-section1{
+    height: auto;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    background-color: #011126;
+}
+.services-grid{
+    width: 100%;
+    display: flex;
+    flex-direction: grid;
+    justify-content: space-between;
+}
+.services-left{
+    width: 40rem;
+    height: 20rem;
+    margin-bottom: 2rem;
+    border-bottom: .1px solid rgba(255, 255, 255, 0.25);
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-start;
+    padding-bottom: 2rem;
+}
+.services-left a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 2.5rem;
+    font-weight: 300;
+    margin-left: 2rem;
+    transition: all .2s ease-in-out;
+}
+a:link{
+    text-decoration: none;
+}
+.services-left a img{
+    width: 15rem;
+    border-radius: 1rem;
+}
+.services-right{
+    width: 40rem;
+    height: 20rem;
+    margin-bottom: 2rem;
+    border-bottom: .1px solid rgba(255, 255, 255, 0.25);
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+    padding-bottom: 2rem;
+}
+.services-right a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 2.5rem;
+    font-weight: 300;
+    margin-right: 2rem;
+    transition: all .2s ease-in-out;
+}
+.services-right a img{
+    width: 15rem;
+    border-radius: 1rem;
+}
+.services-all a img {
+    transition: all .2s ease-in-out;
+}
+.services-all a img:hover{
+    transform: scale(1.1);
+}
+/* SECTION 2 END */
+/*SECTION 3 START */
+.services-section2{
+    width: auto;
+    padding-top: 5%;
+    padding-bottom: 11%;
+    background-color: #fff;
+}
+.services-section3-title{
+    display: flex;
+    justify-content: flex-start;
+}
+#tools-processes{
+    font-weight: 700;
+    letter-spacing: .1rem;
+}
+.tools-grid{
+    margin-top: 8%;
+    display: flex;
+    flex-direction: grid;
+    justify-content: space-between;
+}
+.tool{
+    width: 20%;
+    height: 30rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    text-align: center;
+}
+#mteams-title{
+    font-size: 2rem;
+}
+#agile-title{
+    font-size: 2rem;
+}
+#git-title{
+    font-size: 2rem;
+}
+#figma-title{
+    font-size: 2rem;
+}
+#mteams-img{
+    width: 10rem;
+}
+#agile-img{
+    width: 10rem;
+}
+#git-img{
+    width: 10rem;
+}
+#figma-img{
+    width: 6rem;
+}
+
+/*TOOL BORDER HOVER*/
+
+.tool{
+  position:relative;
+  vertical-align: middle;
+  transition: 0.5s;
+  padding: 0 20px;
+  cursor: default;
+  border: 2px solid #0d0d0d10;
+  -webkit-transition:0.5s;
+}
+.tool::before, .tool::after{
+    width: 100%;
+    height:100%;
+    z-index: 3;
+    content:'';
+    position: absolute;
+    top:0;
+    left:0;
+    box-sizing: border-box;
+    -webkit-transform: scale(0);
+    transition: 0.5s;
+}
+.tool1::before{
+    border-bottom: 2px solid #7B83EB;
+    border-left: 2px solid #7B83EB;
+    -webkit-transform-origin: 0 100%;
+}
+.tool1::after{
+    border-top: 2px solid #7B83EB;
+    border-right: 2px solid #7B83EB;
+    -webkit-transform-origin: 100% 0%;
+}
+.tool2::before{
+    border-bottom: 2px solid #026CBA;
+    border-left: 2px solid #026CBA;
+    -webkit-transform-origin: 0 100%;
+}
+.tool2::after{
+    border-top: 2px solid #026CBA;
+    border-right: 2px solid #026CBA;
+    -webkit-transform-origin: 100% 0%;
+}
+.tool3::before{
+    border-bottom: 2px solid #F05033;
+    border-left: 2px solid #F05033;
+    -webkit-transform-origin: 0 100%;
+}
+.tool3::after{
+    border-top: 2px solid #F05033;
+    border-right: 2px solid #F05033;
+    -webkit-transform-origin: 100% 0%;
+}
+.tool4::before{
+    border-bottom: 2px solid #0ACF83;
+    border-left: 2px solid #0ACF83;
+    -webkit-transform-origin: 0 100%;
+}
+.tool4::after{
+    border-top: 2px solid #0ACF83;
+    border-right: 2px solid #0ACF83;
+    -webkit-transform-origin: 100% 0%;
+}
+.tool:hover::after, .tool:hover::before {
+    -webkit-transform: scale(1.1);
+}
+/*TOOL BORDER HOVER*/
+#mteams-title{
+    color: #7B83EB;
+    font-weight: 300;
+    letter-spacing: .1rem;
+}
+#agile-title{
+    color: #026CBA;
+    font-weight: 300;
+    letter-spacing: .1rem;
+}
+#git-title{
+    color: #F05033;
+    font-weight: 300;
+    letter-spacing: .1rem;
+}
+#figma-title{
+    color: #0ACF83;
+    font-weight: 300;
+    letter-spacing: .1rem;
+}
+/*SECTION 3 END */

@@ -1,0 +1,219 @@
+/* SECTION 1 START */
+.home-section1{
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+    align-items: center;
+}
+
+.player{
+    position: relative;
+}
+.circle{
+    background: rgb(0,80,125);
+    background: linear-gradient(90deg, rgba(0,80,125,1) 0%, rgba(1,17,38,1) 100%);
+    border-radius: 3rem;
+    width: 5rem;
+    height: 5rem;
+    position: absolute;
+    left: -3rem;
+    bottom: -2rem;
+}
+
+.home-section1-text{
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+}
+
+#section1-title{
+    font-size: 2.5rem;
+    font-weight: 400;
+    letter-spacing: .25rem;
+    color: #00507D;
+}
+
+#section1-text{
+    font-size: 1.2rem;
+    color: #0d0d0d91;
+}
+
+.icon{
+    background: url(/src/Assets/play.svg);
+    height: 80px;
+    width: 80px;
+    display: block;
+}
+/* SECTION 1 END */
+
+/* SECTION 2 START */
+.home-section2{
+    height: auto;
+    background-color: #011126;
+    position: relative;
+    padding-bottom: 8rem;
+}
+
+#home-section2-shape{
+    position: absolute;
+    width: 35rem;
+    right: 0;
+    top: -8rem;
+}
+
+.home-section2-content{
+    display: flex;
+    flex-direction: column;
+    column-gap: 20rem;
+}
+
+#home-section2-history{
+    font-size: 5.5rem;
+    font-weight: 200;
+    color: #fff;
+    padding-top: 8rem;
+    letter-spacing: .25rem;
+}
+
+.dot{
+    position: absolute;
+    margin-top: 4.5rem;
+    background: rgb(242, 31, 89);
+    width: 12px;
+    height: 12px;
+    border-radius: 1rem;
+}
+.home-section2-text{
+    position: relative;
+    padding-top: 8rem;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-start;
+}
+#home-section2-text-title{
+    font-size: 4rem;
+    color: #fff;
+    font-weight: 100;
+}
+#home-section2-text-text{
+    font-size: 1.3rem;
+    color: #fff;
+    letter-spacing: .1rem;
+    font-weight: 300;
+}
+.line{
+    position: absolute;
+    background: rgb(242, 31, 89);
+    width: 5rem;
+    height: .15rem;
+    left: 0;
+    bottom: 8.3rem;
+}
+/* SECTION 2 END */
+
+/* SECTION 3 START */
+.home-section3{
+    height: auto;
+    position: relative;
+    padding-bottom: 5rem;
+}
+.rectangle-bg{
+    position: absolute;
+    width: 50%;
+    height: 5rem;
+    background-color: #011126;
+    top: 4rem;
+    z-index: -1;
+}
+#what-we{
+    font-size: 4rem;
+    font-weight: 400;
+    color: #fff;
+    letter-spacing: 1rem;
+    padding-top: 4rem;
+    padding-left: 22%;
+}
+#do{
+    color: #F21F59;
+}
+.what-we-do-services{
+    margin-top: 5rem;
+}
+/* SECTION 3 END */
+/* SECTION 4 START */
+.home-section4{
+    height: 100vh;
+}
+.home-section4-title{
+    position: relative;
+    width: 100%;
+    height: 10rem;
+}
+#title-work{
+    font-size: 5rem;
+    font-weight: 200;
+    letter-spacing: .2rem;
+    padding-left: 7rem;
+}
+.linee{
+    position: absolute;
+    background: rgb(242, 31, 89);
+    width: 5rem;
+    height: .15rem;
+    left: 0;
+    bottom: 5.3rem;
+}
+.home-section4-slider{
+    display: flex;
+    justify-content: center;
+}
+/* SECTION 4 END */
+
+/* SECTION 5 START */
+.home-section5{
+    height: 100vh;
+    background-image: url(../Assets/digitalbg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    padding-top: 3rem;
+}
+.home-section5-title{
+    position: relative;
+}
+#title-contactus{
+    font-size: 5rem;
+    font-weight: 200;
+    letter-spacing: .2rem;
+    padding-left: 7rem;
+    color: #fff;
+}
+.lineee{
+    position: absolute;
+    background: rgb(242, 31, 89);
+    width: 5rem;
+    height: .15rem;
+    left: 0;
+    bottom: 1.2rem;
+}
+.home-section5-form{
+    display: flex;
+    justify-content: space-between;
+}
+.get-in-touch{
+    width: 40%;
+    height: 31.5rem;
+    position: relative;
+}
+#get-in-touch{
+    font-size: 6rem;
+    font-weight: 300;
+    letter-spacing: .5rem;
+    color: #fff;
+    opacity: .5;
+    position: absolute;
+    bottom: .3rem;
+    left: 0;
+}
+/* SECTION 5 END */

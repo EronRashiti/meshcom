@@ -1,0 +1,93 @@
+.contact-hero{
+    height: auto;
+    background-color: #011126;
+}
+.contact-hero-content{
+    display: flex;
+    flex-direction: column;
+}
+.contact-hero-title{
+    position: relative;
+    padding-top: 10rem;
+}
+#contact-hero-title{
+    color: #fff;
+    font-size: 2.5rem;
+    font-weight: 200;
+    padding-left: 7rem;
+}
+.contact-line{
+    position: absolute;
+    background: rgb(242, 31, 89);
+    width: 5rem;
+    height: .15rem;
+    left: 0;
+    top: 12.2rem;
+}
+.contact-hero-info{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 10vh;
+    margin-top: 3rem;
+}
+.contact-infos{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 25rem;
+    height: 8rem;
+    transition: 1s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+.contact-infos:hover{
+    transform: scale(1.1);
+}
+.contact-infos a{
+    text-decoration: none;
+}
+.contact-info-image{
+    width: 4rem;
+    background-color: #0d0d0d;
+}
+.contact-info-image1{
+    padding: 15px;
+}
+.contact-info-image2{
+    padding: 15px;
+}
+.contact-info-image3{
+    padding: 20px 15px;
+}
+.contact-info-text{
+    font-size: 1.5rem;
+    font-weight: 300;
+    color: #fff;
+    cursor: pointer;
+    margin-left: 1rem;
+    transition: 1s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+.contact-info-text:hover{
+    color: #00507D;
+}
+.contact-hero-talk{
+    display: flex;
+    flex-direction: column;
+}
+.contact-hero-talk-title{
+    position: relative;
+    padding-top: 10rem;
+}
+#contact-talk-title{
+    color: #fff;
+    font-size: 2.5rem;
+    font-weight: 200;
+    padding-left: 7rem;
+}
+.talk-line{
+    position: absolute;
+    background: rgb(242, 31, 89);
+    width: 5rem;
+    height: .15rem;
+    left: 0;
+    top: 12.2rem;
+}
