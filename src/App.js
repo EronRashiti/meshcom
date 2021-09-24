@@ -11,7 +11,6 @@ import WebDesign from './Pages/WebDesign';
 import GraphicDesign from './Pages/GraphicDesign';
 import UIUXDesign from './Pages/UIUXDesign';
 
-
 function App() {
   return (
     <div className="App">

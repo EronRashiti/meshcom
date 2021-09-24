@@ -1,6 +1,6 @@
 .services-hero{
     height: 100vh;
-    background-image: url(../Assets/services-hero-bg.jpg);
+    background-image: url(../Assets/mesh-com-services.webp);
     background-size: cover;
 }
 .services-gradient{
@@ -23,13 +23,11 @@
     color: #fff;
     font-size: 1.75rem;
     font-weight: 100;
-    opacity: .5;
     position: absolute;
     bottom: 5%;
     left: 50%;
     transform: translate(-50%, -50%);
 }
-/* SECTION 1 START */
 .services-section1{
     height: auto;
     padding-top: 5%;
@@ -95,8 +93,6 @@ a:link{
 .services-all a img:hover{
     transform: scale(1.1);
 }
-/* SECTION 2 END */
-/*SECTION 3 START */
 .services-section2{
     width: auto;
     padding-top: 5%;
@@ -114,11 +110,11 @@ a:link{
 .tools-grid{
     margin-top: 8%;
     display: flex;
-    flex-direction: grid;
-    justify-content: space-between;
+    flex-direction: row;
+    justify-content: center;
 }
 .tool{
-    width: 20%;
+    width: 50%;
     height: 30rem;
     display: flex;
     flex-direction: column;
@@ -150,9 +146,16 @@ a:link{
 #figma-img{
     width: 6rem;
 }
-
-/*TOOL BORDER HOVER*/
-
+.microsoft-agile{
+    display: flex;
+    justify-content: center;
+    width: 50%;
+}
+.git-figma{
+    display: flex;
+    justify-content: center;
+    width: 50%;
+}
 .tool{
   position:relative;
   vertical-align: middle;
@@ -217,7 +220,6 @@ a:link{
 .tool:hover::after, .tool:hover::before {
     -webkit-transform: scale(1.1);
 }
-/*TOOL BORDER HOVER*/
 #mteams-title{
     color: #7B83EB;
     font-weight: 300;
@@ -238,4 +240,151 @@ a:link{
     font-weight: 300;
     letter-spacing: .1rem;
 }
-/*SECTION 3 END */
+
+@media screen and (max-width: 1024px) {
+    .services-hero-text{
+        width: 100%;
+        text-align: center;
+    }
+    .services-grid{
+        justify-content: space-evenly;
+    }
+    .services-left{
+        flex-direction: column-reverse;
+    align-items: center;
+    text-align: center;
+        width: 125%;
+        justify-content: space-evenly;
+    }
+    .services-right{
+        flex-direction: column;
+    align-items: center;
+    text-align: center;
+        width: 125%;
+        justify-content: space-evenly;
+    }
+    .service-link{
+        font-size: 1.5rem !important;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .services-hero-title{
+        font-size: 4rem;
+    }
+    .services-hero-text{
+        font-size: 1.4rem;
+        width: 100%;
+        text-align: center;
+    }
+    .services-grid{
+        justify-content: space-around;
+    }
+    .services-left{
+        flex-direction: column-reverse;
+    align-items: center;
+    text-align: center;
+        width: 28rem;
+        height: 15rem;
+        border: 0;
+    }
+    .services-right{
+        flex-direction: column;
+    align-items: center;
+    text-align: center;
+        width: 28rem;
+        height: 15rem;
+        border: 0;
+    }
+    .services-left a{
+        font-size: 1.25rem;
+    }
+    .services-right a{
+        font-size: 1.25rem;
+    }
+    .service-link-left{
+        margin-left: 1rem !important;
+    }
+    .service-link-right{
+        margin-right: 1rem !important;
+    }
+    #tools-processes-text{
+        font-size: 2rem;
+    }
+    .tools-grid{
+        flex-direction: column;
+        align-items: center;
+    }
+    .microsoft-agile{
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+    }
+    .git-figma{
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+    }
+    .tool{
+        width: 49%;
+    }
+    .services-section2 {
+        padding-bottom: 15%;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .services-hero-title{
+        font-size: 3rem;
+    }
+    .services-hero-text{
+        font-size: 1rem;
+    }
+    .services-grid{
+        flex-direction: column;
+        align-items: center;
+    }
+    .services-left{
+        margin-bottom: 1rem;
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+    .services-right{
+        margin: 1rem;
+        flex-direction: column;
+        align-items: center;
+    }
+    .services-left a{
+        margin: 0;
+    }
+    .services-right a{
+        margin: 0;
+    }
+    .services-all{
+        border-bottom: 1px solid rgba(255, 255, 255, 0.144);
+        padding: 15px;    
+    }
+    .service-link{
+        margin: 0 !important;
+        text-align: center;
+        font-size: 1.25rem !important;
+    }
+    .tool {
+        width: 100%;
+    }
+    .microsoft-agile{
+        flex-direction: column;
+    }
+    .git-figma{
+        flex-direction: column;
+    }
+    .tool1{
+        margin-bottom: 1rem;
+    }
+    .tool2{
+        margin-bottom: 1rem;
+    }
+    .tool3{
+        margin-bottom: 1rem;
+    }
+}

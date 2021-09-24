@@ -1,12 +1,12 @@
 import React from 'react';
-import LOGO from '../Assets/LOGO_black.svg';
+import LOGO from '../Assets/mesh-com-black-logo.svg';
 
 function Footer() {
     return (
         <div className="footer">
             <div className="container">
                 <div className="footer-logo">
-                    <img src={LOGO}/>
+                    <img src={LOGO} alt=""/>
                 </div>
                 <div className="footer-elements">
                     <div className="col1">

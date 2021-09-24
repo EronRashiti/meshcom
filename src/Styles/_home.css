@@ -1,73 +1,53 @@
-/* SECTION 1 START */
 .home-section1{
-    height: 100vh;
+    height: auto;
+    padding-top: 15%;
+    padding-bottom: 15%;
     display: flex;
     flex-direction: row;
-    gap: 2rem;
+    gap: 3rem;
     align-items: center;
 }
-
 .player{
     position: relative;
 }
-.circle{
-    background: rgb(0,80,125);
-    background: linear-gradient(90deg, rgba(0,80,125,1) 0%, rgba(1,17,38,1) 100%);
-    border-radius: 3rem;
-    width: 5rem;
-    height: 5rem;
-    position: absolute;
-    left: -3rem;
-    bottom: -2rem;
-}
-
 .home-section1-text{
     display: flex;
     flex-direction: column;
-    gap: 3rem;
+    gap: 2rem;
 }
-
 #section1-title{
     font-size: 2.5rem;
     font-weight: 400;
     letter-spacing: .25rem;
     color: #00507D;
 }
-
 #section1-text{
     font-size: 1.2rem;
     color: #0d0d0d91;
 }
-
 .icon{
     background: url(/src/Assets/play.svg);
     height: 80px;
     width: 80px;
     display: block;
 }
-/* SECTION 1 END */
-
-/* SECTION 2 START */
 .home-section2{
     height: auto;
     background-color: #011126;
     position: relative;
     padding-bottom: 8rem;
 }
-
 #home-section2-shape{
     position: absolute;
     width: 35rem;
     right: 0;
     top: -8rem;
 }
-
 .home-section2-content{
     display: flex;
     flex-direction: column;
     column-gap: 20rem;
 }
-
 #home-section2-history{
     font-size: 5.5rem;
     font-weight: 200;
@@ -75,7 +55,6 @@
     padding-top: 8rem;
     letter-spacing: .25rem;
 }
-
 .dot{
     position: absolute;
     margin-top: 4.5rem;
@@ -110,9 +89,6 @@
     left: 0;
     bottom: 8.3rem;
 }
-/* SECTION 2 END */
-
-/* SECTION 3 START */
 .home-section3{
     height: auto;
     position: relative;
@@ -132,7 +108,7 @@
     color: #fff;
     letter-spacing: 1rem;
     padding-top: 4rem;
-    padding-left: 22%;
+    padding-left: 16%;
 }
 #do{
     color: #F21F59;
@@ -140,15 +116,14 @@
 .what-we-do-services{
     margin-top: 5rem;
 }
-/* SECTION 3 END */
-/* SECTION 4 START */
 .home-section4{
-    height: 100vh;
+    height: auto;
+    padding-bottom: 1rem;
 }
 .home-section4-title{
     position: relative;
     width: 100%;
-    height: 10rem;
+    height: auto;
 }
 #title-work{
     font-size: 5rem;
@@ -162,18 +137,11 @@
     width: 5rem;
     height: .15rem;
     left: 0;
-    bottom: 5.3rem;
+    bottom: 1.3rem;
 }
-.home-section4-slider{
-    display: flex;
-    justify-content: center;
-}
-/* SECTION 4 END */
-
-/* SECTION 5 START */
 .home-section5{
     height: 100vh;
-    background-image: url(../Assets/digitalbg.jpg);
+    background-image: url(../Assets/contact-meshcom.webp);
     background-size: cover;
     background-repeat: no-repeat;
     position: relative;
@@ -216,4 +184,257 @@
     bottom: .3rem;
     left: 0;
 }
-/* SECTION 5 END */
+.carousel-status{
+    display: none !important;
+}
+.control-dots{
+    display: none !important;
+}
+.legend{
+    display: block !important;
+    background: none !important;
+    color: #011126 !important;
+    font-weight: 700 !important;
+    letter-spacing: .2rem !important;
+    text-transform: uppercase !important;
+    opacity: 1 !important;
+    font-size: 2rem !important;
+}
+.carousel-slider{
+    width: 100% !important;
+    margin: 0 auto !important;
+}
+.thumbs-wrapper {
+    display: flex !important; 
+    justify-content: center !important;
+}
+
+@media screen and (max-width: 1024px) {
+    .home-section1{
+        flex-direction: column-reverse;
+        align-items: flex-start;
+    }
+    #widget2{
+        width: 120%;
+    }
+    .icon{
+        display: none;
+    }
+    #home-section2-shape{
+        width: 26rem;
+        top: -6rem;
+    }
+    #what-we{
+        padding-left: 13%;
+    }
+    .home-section4{
+        height: auto;
+        padding-bottom: 5rem;
+    }
+    .home-section5{
+        height: auto;
+        padding-bottom: 8rem;
+    }
+    #title-contactus{
+        font-size: 3.5rem;
+    }
+    #get-in-touch{
+        font-size: 4rem;
+    }
+    form button {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .home-section1{
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: space-evenly;
+        gap: 2rem;
+        align-items: center;
+    }
+    .icon{
+        display: none;
+    }
+    #widget2{
+        width: 100%;
+    }
+    #home-section2-shape{
+        width: 43%;
+        top: -10%;
+    }
+    #home-section2-history{
+        font-size: 4rem;
+    }
+    .dot{
+        margin-top: 3.2rem;
+    }
+    .home-section2-text{
+        padding-top: 4rem;
+        justify-content: space-between;
+    }
+    #home-section2-text-title{
+        font-size: 3rem;
+    }
+    #home-section2-text-text{
+        font-size: 1.1rem;
+    }
+    .line{
+        bottom: 9.5rem;
+    }
+    #what-we{
+        font-size: 3.5rem;
+        padding-left: 5%;
+    }
+    .home-section4{
+        height: auto;
+        padding: 3rem 3rem;
+    }
+    .home-section5{
+        height: auto;
+        padding-bottom: 0;
+    }
+    #title-contactus{
+        font-size: 3rem;
+    }
+    #get-in-touch{
+        font-size: 3rem;
+        opacity: 0.75;
+        bottom: 22%;
+        left: 15%;
+    }
+    .contact-form-home form{
+        height: 75%;
+    }
+    .legend{
+        bottom: 0 !important;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    #mainimgg{
+        width: 70%;
+    }
+    .home-section1{
+        align-items: baseline;
+    }
+    #widget2{
+        width: 50%;
+    }
+    .home-section2 {
+        padding-bottom: 4rem;
+    }
+    #home-section2-shape{
+        width: 50%;
+        top: -5%;
+    }
+    #home-section2-history{
+        font-size: 2.1rem;
+    }
+    .dot{
+        width: 8px;
+        height: 8px;
+        margin-top: 1.6rem;
+    }
+    .home-section2-text{
+        column-gap: 4rem;
+    }
+    #home-section2-text-title{
+        font-size: 1.75rem;
+    }
+    #home-section2-text-text{
+        font-size: 0.9rem;
+    }
+    .line{
+        bottom: 18.5rem;
+        width: 85px;
+        height: 6px;
+        border-radius: 5px;
+    }
+    .rectangle-bg{
+        width: 70%;
+        height: 3.75rem;
+    }
+    #what-we{
+        font-size: 1.5rem;
+        padding-top: 5rem;
+        letter-spacing: 0.5rem;
+    }
+    .show-btn{
+        display: none;
+    }
+    .elements-show{
+        border: 0;
+    }
+    .home-section4{
+        height: auto;
+        padding: 2rem 2rem;
+    }
+    .home-section4-title {
+        height: 5rem;
+    }
+    #title-work{
+        font-size: 3.5rem;
+    }
+    .linee{
+        bottom: 1.75rem;
+    }
+    .home-section5{
+        height: auto !important;
+        padding-top: 3rem !important;
+        padding-bottom: 6rem !important;
+    }
+    #title-contactus{
+        font-size: 2.5rem;
+        margin-bottom: 2rem;
+    }
+    .lineee{
+        width: 55px;
+    }
+
+    .get-in-touch{
+        display: none;
+    }
+    form{
+        align-items: flex-start !important;
+    }
+    .formWord{
+        font-size: .8rem;
+    }
+    .formWord textarea {
+        height: 135px;
+    }
+    .contact-form-home {
+        width: 100% !important;
+        height: auto;
+    }
+    .contact-form-home form {
+        height: auto;
+        padding: 3rem 1rem;
+    }
+    form button{
+        width: 100% !important;
+    }
+    .home-section5{
+        padding-top: 6rem;
+        padding-bottom: 6rem;
+    }
+    .carousel-slider{
+        width: 100% !important;
+        margin: 0 auto !important;
+        height: auto !important;
+        padding-bottom: 2rem !important;
+    }
+    .thumbs-wrapper{
+        display: none !important;
+    }
+    .slider-wrapper{
+        height: auto !important;
+        padding-bottom: 2rem !important;
+    }
+    .legend{
+        bottom: -3rem !important;
+        font-size: 1rem !important;
+    }
+}

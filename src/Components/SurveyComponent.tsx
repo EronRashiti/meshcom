@@ -9,8 +9,10 @@ export interface ISurveyProps{
     onComplete: (survey: any) => void;
 }
 
+
 const SurveyComponent: React.FunctionComponent<ISurveyProps> = props => {
     const { css, data, json, onComplete } = props;
+    
 
     return (
         <Survey.Survey

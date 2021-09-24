@@ -1,5 +1,4 @@
 @import './Styles/_navbar';
-@import './Styles/_sidebar.css';
 @import './Styles/_main.css';
 @import './Styles/_home.css';
 @import './Styles/_showandhide.css';
@@ -11,7 +10,7 @@
 @import './Styles/_contact.css';
 @import './Styles/_survey.css';
 @import './Styles/_singleservice.css';
-
+@import './Styles/_sidenav.css';
 
 *{
   padding: 0;
@@ -19,31 +18,32 @@
   box-sizing: border-box;
   font-family: 'Raleway', sans-serif;
 }
-
+html{
+  position: relative;
+  overflow-x: hidden;
+}
+body{
+  position: relative;
+  overflow-x: hidden;
+}
 body::-webkit-scrollbar{
   width: .5rem;
 }
-
 body::-webkit-scrollbar-thumb{
   background-color: #00507D;
 }
-
 body::-webkit-scrollbar-track{
   background-color: #011126;
 }
-
 .container-section3{
   margin-left: 20%;
   margin-right: 20%;
 }
-
 .video-container{
   margin-left: 10%;
   margin-right: 10%;
 }
-
 .container-services{
   margin-left: 5%;
   margin-right: 5%;
 }
-

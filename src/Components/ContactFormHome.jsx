@@ -5,19 +5,20 @@ function ContactFormHome(props) {
     function sendEmail(e) {
         e.preventDefault();
     
-        emailjs.sendForm('gmail', 'YOUR_TEMPLATE_ID', e.target, 'YOUR_USER_ID')
+        emailjs.sendForm('gmail', 'template_zu8jrxd', e.target, 'user_3uzs2LZ7Yn2W0thmASr19')
           .then((result) => {
               console.log(result.text);
           }, (error) => {
               console.log(error.text);
           });
+          e.target.reset()
       }
     return (
         <form action="" onSubmit={sendEmail}>
             <div class="formWord">
-                <input class="input100" type="text" name="fullName" required placeholder="Full Name" />
+                <input class="input100" type="text" name="name" required placeholder="Full Name" />
                 <br />
-                <input class="input100" type="text" name="phone" required placeholder="Phone Number"/>
+                <input class="input100" type="tel" name="phone" required placeholder="Phone Number"/>
                 <br />
                 <input class="input100" type="text" name="email" required placeholder="Email"/>
                 <br />
@@ -25,7 +26,7 @@ function ContactFormHome(props) {
             <div class="formWord">
                 <textarea name="message" required placeholder="Message"></textarea>
                 <br />
-                <button>SUBMIT</button>
+                <button type="submit">SUBMIT</button>
             </div>
       </form>
     )

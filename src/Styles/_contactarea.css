@@ -35,3 +35,39 @@
 .contact-area-btn:focus{
     outline: none;
 }
+
+@media screen and (max-width: 1024px) {
+    .home-section5{
+        height: 90vh;
+    }
+    .contact-area{
+        top: -5rem;
+    }
+    .contact-area-content{
+        height: 75%;
+    }
+    #contact-area-text{
+        font-size: 1rem;
+        margin: 0 !important;
+    }
+    .contact-area-btn{
+        font-size: 0.8rem;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .contact-area{
+        display: none;
+    }
+    .contact-area-content{
+        height: 65%;
+    }
+    #contact-area-text{
+        font-size: .65rem;
+        letter-spacing: 0.1rem;
+    }
+    .contact-area-btn{
+        font-size: .7rem;
+        padding: 10px;
+    }
+}

@@ -1,7 +1,8 @@
 .about-hero{
     height: 100vh;
-    background-image: url(../Assets/about-hero-bg.jpg);
+    background-image: url(../Assets/mesh-com-team-bg.webp);
     background-size: cover;
+    position: relative;
 }
 .team{
     position: absolute;
@@ -62,7 +63,6 @@
         opacity: 1;
       } 
   }
-/* SECTION 1 START */
 .about-section1{
     height: auto;
     padding: 10%;
@@ -84,4 +84,39 @@
     line-height: 1.75rem;
     margin-top: 3rem;
 }
-/* SECTION 1 END */
+
+@media screen and (max-width: 1024px) { 
+  .team{
+    width: 135%;
+    left: -12rem;
+  }
+  .about-hero-title{
+    font-size: 7rem;
+  }
+  .immer-für-dich-da{
+    font-size: 3rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .team{
+    width: 125%; 
+    left: -6rem;
+  }
+  .about-hero-title{
+    font-size: 5.5rem;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .team{
+    width: 630px;
+    left: -8rem;
+  }
+  .about-hero-title{
+    font-size: 3rem;
+  }
+  .immer-für-dich-da{
+    font-size: 1.3rem;
+  }
+}

@@ -6,6 +6,9 @@
     border: none;
     opacity: 1;
 }
+.elements:focus{
+    outline: none;
+}
 .elements-show{
     display: block;
     text-align: left;
@@ -13,12 +16,13 @@
     padding-bottom: 1.5rem;
     margin-top: 1.5rem;
     transition: all 0.4s ease-out;
-  opacity: 0.8;
+    opacity: 0.8;
 }
 #elements-title{
     font-size: 1.5rem;
     font-weight: 500;
     color: #0d0d0d;
+    border: none;
 }
 #elements-text{
     font-size: 1rem;
@@ -30,4 +34,7 @@
     background: none;
     border: none;
     color: #F21F59;
+}
+.show-btn:focus{
+    outline: none;
 }

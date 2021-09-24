@@ -1,7 +1,7 @@
 .single-service-hero{
     position: relative;
     height: auto;
-    background-image: url("../Assets/single-service-bg.jpg");
+    background-image: url("../Assets/mesh-com-service.jpg");
     background-size: cover;
 }
 .single-service-hero-content{
@@ -12,9 +12,8 @@
     justify-content: space-between;
     width: 100%;
 }
-
 .single-service-text-content{
-    width: 30%;
+    width: 40%;
     height: auto;
     text-align: center;
     margin-left: 2%;
@@ -32,7 +31,7 @@
     text-align: left;
 }
 .single-service-images{
-    width: 65%;
+    width: 60%;
     display: flex;
     flex-direction: row-reverse;
     justify-content: space-between;
@@ -43,15 +42,143 @@
     justify-content: space-between;
 }
 #single-images{
-    border-bottom-left-radius: 2rem;
-    border-top-left-radius: 2rem;
+    width: 100%;
 }
-
-/* SECTION1 */
 .single-service-section1{
     background-color: #011126;
     height: auto;
-    padding-top: 10%;
-    padding-bottom: 10%;
+    padding-top: 5%;
+    padding-bottom: 12%;
 }
-/* SECTION1 */
+.work-method-title{
+    color: #fff;
+    font-size: 2rem;
+}
+.work-method-process-content{
+    margin-top: 2.5rem;
+}
+.work-method-process{
+    margin-top: 3rem;
+    display: flex;
+    align-items: center;
+}
+.process-number{
+    color: #fff;
+    font-size: 1.25rem;
+    background-color: #0d0d0d;
+    padding: 15px 20px;
+}
+.process-title{
+    color: #fff;
+    font-size: 1.5rem;
+    font-weight: 500;
+    letter-spacing: .15rem;
+    margin-left: 5rem;
+    width: 30%;
+}
+.process-text{
+    color: #fff;
+    font-size: 1.1rem;
+    font-weight: 300;
+    letter-spacing: .05rem;
+    text-align: left;
+    width: 75%;
+}
+
+@media screen and (max-width: 1024px) {
+    .single-service-hero-content{
+        padding-top: 10%;
+        align-items: flex-end;
+    }
+    .single-service-inside-images{
+        display: none;
+    }
+    .single-service-text-content{
+        width: 45%;
+    }
+    .single-service-images{
+        width: 45%;
+    }
+    .work-method-title{
+        font-size: 1.75rem;
+        margin-left: 1rem;
+    }
+    .work-method-process{
+        margin: 3rem 1rem 0 1rem;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .single-service-images{
+        width: 45%;
+    }
+    #single-images{
+        width: 100%;
+    }
+    .single-service-hero-content{
+        width: 100%;
+        padding-top: 15%;
+    }
+    #single-service-title{
+        font-size: 2rem;
+    }
+    .single-service-images{
+        width: 50%;
+    }
+    .work-method-title{
+        font-size: 1.5rem;
+    }
+    .work-method-process{
+        margin: 2rem 0 0 1rem;
+    }
+    .process-number{
+        font-size: 1rem;
+    }
+    .process-title{
+        font-size: 1.1rem;
+        font-weight: 600;
+    }
+    .process-text{
+        font-size: .9rem;
+    }
+} 
+
+@media screen and (max-width: 480px) {
+    .single-service-hero-content{
+        padding-top: 5rem;
+        flex-direction: column;
+        align-items: center;
+    }
+    .single-service-text-content{
+        width: 100%;
+    }
+    #single-service-text{
+        font-size: .8rem;
+    }
+    .single-service-images{
+        margin-top: 3rem;
+        margin-bottom: 4rem;
+        width: 100%;
+    }
+    #single-images{
+        border-radius: 0;
+    }
+    .work-method-process{
+        margin: 0;
+        padding: 1rem 0rem;
+        align-items: center;
+        flex-direction: column;
+        border-top: 1px solid #ffffff15;
+    }
+    .process-number{
+        margin-bottom: 1rem;
+    }
+    .process-title{
+        margin: 0;
+        width: auto;
+        margin-bottom: 1rem;
+    }
+    .work-method-title{
+        font-size: 2rem;
+    }
+}

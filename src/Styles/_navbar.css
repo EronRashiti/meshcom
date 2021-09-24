@@ -1,4 +1,5 @@
 .nav{
+    padding-top: 1.5rem;
     width: 100%;
     height: 10vh;
     background: none;
@@ -6,80 +7,177 @@
     z-index: 1;
 }
 .main-nav{
-    height: 10vh;
+    height: auto;
     display: grid;
-    align-items: center;
-    grid-template-columns: 1fr 2fr 1fr;
+    align-items:flex-end;
+    grid-template-columns: 1fr 4fr 1fr;
 }
-#logo{
-    width: 20%;
-    height: 3rem;
+.nav-logo{
+    transition: all .5s;
 }
-
+.nav-logo:hover{
+    transform: translateY(-8px);
+}
 .menu-link ul{
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
 }
-
 .menu-link ul li{
     list-style: none;
-    display: inline-block;
+    transition: all .5s;
 }
-
+.menu-link ul li:hover{
+    transform: translateY(-5px);
+}
 .menu-link ul li a {
-    display: block;
-    padding: 15px;
     text-decoration: none;
+    font-size: .9rem;
     color: #fff;
     font-weight: 500;
     text-transform: uppercase;
-    margin: 0 10px;
     letter-spacing: .2rem;
+    transition: ease-in-out 1.5s;
 }
 .menu-link ul li a:active, .active{
-  color: #00507D !important;
+    color: #011126 !important;
+    background-color: #fff;
+    padding: 38px 8px 15px 8px; 
+    
 }
-
 .menu-link ul li a,
 .menu-link ul li a:after,
 .menu-link ul li a:before{
     transition: all .3s;
 }
-
-.menu-link ul li a:after {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  margin: auto;
-  width: 3%;
-  content: '';
-  color: transparent;
-  background: #00507D;
-  height: 1px;
-}
-
-.menu-link ul li a:hover:after{
-    width: 7.5%;
-}
-
 .menu-link ul li a:hover{
     color: #00507D;
      z-index: 1;
 }
 
-@-webkit-keyframes menu-link {
-    0% {
-      width: 0%;
-      height: 1px;
+.burger{
+    display: none;
+}
+.burger .burger_line1, .burger .burger_line2, .burger .burger_line3{
+    transform: rotate(360deg);
+    transition: all 0.2s ease-in-out;
+}
+.burger .close_line1{
+    transform: rotate(45deg);
+    transition: all 0.2s ease-in-out;
+}
+.burger .close_line2{
+    transform: rotate(135deg);
+    transition: all 0.2s ease-in-out;
+}
+.burger_line1{
+    cursor: pointer;
+    width: 18px;
+    height: 2.5px;
+    border-radius: 3px;
+    background-color: #fff;
+    margin: 5px;
+}
+.burger_line2{
+    cursor: pointer;
+    width: 25px;
+    height: 2.5px;
+    border-radius: 3px;
+    background-color: #fff;
+    margin: 5px;
+}
+.burger_line3{
+    cursor: pointer;
+    width: 11px;
+    height: 2.5px;
+    border-radius: 3px;
+    background-color: #fff;
+    margin: 5px;
+}
+
+.close_line1{
+    cursor: pointer;
+    width: 25px;
+    background-color: #fff;
+    height: 2px;
+    border-radius: 3px;
+}
+.close_line2{
+    cursor: pointer;
+    width: 25px;
+    background-color: #fff;
+    height: 2.5px;
+    border-radius: 3px;
+}
+
+@media screen and (max-width:1024px){
+    .menu-link ul li a{
+        font-size: .7rem;
     }
-    50% {
-      width: 100%;
-      height: 1px;
+    .menu-link ul li a:active, .active{
+        color: #011126 !important;
+        background-color: #fff;
+        padding: 42px 8px 10px 8px;    
     }
-    100% {
-      width: 100%;
-      height: 100%;
-      background: #333;
+    .logo{
+        width: 120px;
+        height: auto;
     }
-  }
+    .main-nav{
+        grid-template-columns: 1fr 2fr 1.25fr;
+    }
+    .container{
+        max-width: 1024px;
+    }
+}
+
+@media screen and (max-width:768px){
+    .sidebaar{
+        display: none;
+    }
+    .menu-link ul {
+        position: absolute;
+        right: 0;
+        height: 90vh;
+        top: 10vh;
+        background-color: #011126;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 50%;
+        transition: all 0.5s ease-in-out;
+    }
+    .menu-link{
+        right: -100%;
+        transition: ease-in 2s; 
+    }
+     .menu-link.closed ul{
+        right: -100%;
+        transition: all 0.5s ease-in-out;
+    } 
+    .menu-link.closed{
+        right: 0;
+        transition: all 0.5s ease-in-out;  
+    } 
+    .menu-link ul li a{
+        font-size: 1rem;
+    }
+    .menu-link ul li a:active, .active{
+        color: #fff !important;
+        background: none !important;
+    }
+    .burger{
+        display: block;
+        cursor: pointer;
+    }
+    .main-nav{
+        grid-template-columns: .5fr 7fr .5fr;
+        align-items: center;
+    }   
+    .container{
+        max-width: 768px;
+    }
+}
+
+@media screen and (max-width:768px){
+   
+}

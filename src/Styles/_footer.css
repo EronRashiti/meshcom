@@ -28,6 +28,7 @@
     font-weight: 300;
     letter-spacing: .25rem;
     color: #fff;
+    margin: 0;
 }
 .copyright-txt span{
     font-weight: 600;
@@ -49,4 +50,35 @@
 #footer-text{
     font-weight: 400;
     color: #0d0d0d;
+}
+
+@media screen and (max-width: 768px) {
+    .copyright-txt{
+        font-size: 0.65rem;
+        letter-spacing: 0.2rem;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .copyright{
+        width: 60%;
+        height: 1.8rem;
+    }
+    .copyright-txt{
+        font-size: 0.4rem;
+        letter-spacing: 0.075rem;
+    }
+    .footer-elements{
+        grid-template-columns: 2fr 2fr;
+        align-content: flex-start; 
+    }
+    .footer-elements{
+        margin-top: 3.5rem;
+    }
+    .col3{
+        margin-top: 3.5rem;
+    }
+    .col4{
+        margin-top: 3.2rem;
+    }
 }

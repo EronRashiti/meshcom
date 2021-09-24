@@ -1,5 +1,5 @@
 .contact-hero{
-    height: auto;
+    min-height: 100vh;
     background-color: #011126;
 }
 .contact-hero-content{
@@ -90,4 +90,51 @@
     height: .15rem;
     left: 0;
     top: 12.2rem;
+}
+
+@media screen and (max-width: 1024px) {
+    .contact-info-text{
+        font-size: 1.2rem;
+    }
+    #sp_127{
+        overflow-y: hidden !important;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .contact-info-text{
+        font-size: .9rem;
+    }
+    .contact-hero-talk-title{
+        padding-top: 5rem;
+    }
+    .talk-line{
+        top: 7.2rem;
+    }
+    
+}
+
+@media screen and (max-width: 480px) {
+    .contact-hero-info{
+        flex-direction: column;
+        align-items: center;
+    }
+    .contact-infos{
+        flex-direction: column;
+        margin-bottom: 2rem;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.045);
+    }
+    .contact-info-text{
+        font-size: 1.3rem;
+        margin: 1rem;
+    }
+    .contact-hero-talk{
+        margin-top: 100%;
+    }
+    .contact-hero-title{
+        padding-top: 6rem !important;
+    }
+    .contact-line{
+        top: 11.2rem !important;
+    }
 }

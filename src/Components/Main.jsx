@@ -1,5 +1,5 @@
 import React from 'react';
-import HeroImage from '../Assets/540 455.png';
+import HeroImage from '../Assets/mesh-com-development-work.webp';
 import TextTransition, { presets } from "react-text-transition";
 
 const TEXTS = [
@@ -32,7 +32,7 @@ function Main() {
                     springConfig={ presets.wobbly }
                     noOverflow={true}/>
                 </h1>
-                <img id="mainimgg" className="mainimg" src={HeroImage}/>
+                <img id="mainimgg" className="mainimg" src={HeroImage} alt="mesh-com-work"/>
             </div>
         </div>
     )

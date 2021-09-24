@@ -3,41 +3,40 @@ import NavBar from '../Components/NavBar';
 import Main from '../Components/Main';
 import Showandhide from '../Components/Showandhide'
 import ReactPlayer from 'react-player/youtube';
-import RecShape from '../Assets/rec-shape.svg';
-import Slider from '../Components/Slider';
+import RecShape from '../Assets/mesh-com-rectangle.webp';
+import Carousel from '../Components/Carousel';
 import ContactFormHome from '../Components/ContactFormHome';
 import Footer from '../Components/Footer'
 import ContactArea from '../Components/ContactArea';
+import "react-responsive-carousel/lib/styles/carousel.min.css";
 
 
-function Home() {
+const  Home = () => {
     return (
         <div className="home">
 
-            <div className="home-hero">
+            <section className="home-hero">
                 <NavBar />
                 <Main />
-            </div>
+            </section>
 
-            <div className="video-container">
+            <section className="video-container">
                 <div className="home-section1">            
                     <div className="player">
-                        <ReactPlayer url='https://www.youtube.com/watch?v=MQw68AVw6uY' controls="true"/>
-                        <span className="circle"></span>                        
+                        <ReactPlayer url='https://www.youtube.com/watch?v=MQw68AVw6uY' controls="true"/>                        
                     </div>
                     <div className="home-section1-text">
                         <h1 id="section1-title">Get Solution <br/> For Your Business</h1>
                         <p id="section1-text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. 
                             Aenean commodo ligula eget dolor. Aenean massa.
-                            Cum sociis natoque penatibus et magnis dis parturient montes, 
-                            nascetur ridiculus mus. Donec quam felis, ultricies nec,</p>
+                            Cum sociis natoque penatibus et magnis dis parturient montes.</p>
                         <span className="icon"></span>    
                     </div> 
                 </div>    
-            </div>    
+            </section>    
 
-            <div className="home-section2">
-                <img id="home-section2-shape" src={RecShape}/>
+            <section className="home-section2">
+                <img id="home-section2-shape" src={RecShape} alt="mesh-com-shape"/>
                 <div className="container">
                     <div className="home-section2-content">
                         <div className="home-section2-history">
@@ -61,9 +60,9 @@ function Home() {
                         </div>
                     </div>
                 </div>
-            </div>
+            </section>
 
-            <div className="home-section3">
+            <section className="home-section3">
                 <div className="rectangle-bg"></div>
                     <div className="container">
                         <h1 id="what-we">what we <span id="do"> do!</span></h1>
@@ -71,20 +70,20 @@ function Home() {
                     <div className="container-section3 what-we-do-services">
                     <Showandhide />
                     </div>
-            </div>
+            </section>
 
-            <div className="home-section4">
+            <section className="home-section4">
                 <div className="container">
                     <div className="home-section4-title">
                         <h1 id="title-work">work.<span className="linee"></span></h1>
                     </div>
                     <div className="home-section4-slider">
-                        <Slider/>
+                        <Carousel />
                     </div>
                 </div>
-            </div>
+            </section>
 
-            <div className="home-section5">
+            <section className="home-section5">
                 <div className="container">
                     <div className="home-section5-title">
                         <h1 id="title-contactus">contact us<span className="lineee"></span></h1>
@@ -98,18 +97,17 @@ function Home() {
                         </div>
                     </div>
                 </div>
-            </div>
+            </section>
 
-            <div className="footer">
+            <section className="footer">
                 <div className="contact-area-footer">
                     <ContactArea/>
                 </div>
                 <Footer />
-            </div>            
+            </section>            
            
 
         </div>
     )
 }
-
 export default Home;
