@@ -59,12 +59,6 @@ function Contact() {
                    </div>    
                 </div>
             </section>
-            {/* <div className="form">
-                <form method="POST" action="http://localhost/mesh-com-backend/action_page.php">
-                    <input type="text" placeholder="name" name="surveyData" />
-                    <input type="submit" value="click" name="submit" />
-                </form>
-            </div>                   */}
         </div>
     )   
 }
