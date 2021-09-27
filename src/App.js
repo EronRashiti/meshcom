@@ -3,7 +3,7 @@ import Home from './Pages/Home';
 import About from './Pages/About';
 import Services from './Pages/Services';
 import Contact from './Pages/Contact';
-import { BrowserRouter, Switch, Route } from 'react-router-dom';
+import { HashRouter, Switch, Route } from 'react-router-dom';
 import AppDevelopment from './Pages/AppDevelopment';
 import ITService from './Pages/ITService';
 import WebDevelopment from './Pages/WebDevelopment';
@@ -14,7 +14,7 @@ import UIUXDesign from './Pages/UIUXDesign';
 function App() {
   return (
     <div className="App">
-      <BrowserRouter>
+      <HashRouter>
        <Switch>
             <Route path="/" exact>
               <Home />
@@ -47,7 +47,7 @@ function App() {
               <UIUXDesign />
             </Route>
         </Switch>
-        </BrowserRouter>  
+        </HashRouter>  
     </div>
     
   );
