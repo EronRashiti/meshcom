@@ -1,6 +1,10 @@
 .sv_main{
     background-color: #011126 !important;
 }
+.sv_main .sv_body{
+    border: 0 !important;
+    background: none !important;
+}
 .sv_main form{
     background-color: #011126 !important;
     justify-content: center !important;

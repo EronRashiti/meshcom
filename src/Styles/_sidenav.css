@@ -1,21 +1,23 @@
 .sidebar{
     width: 250px;
-    background: #011126;
+    background: #011a3b;
     position: absolute;
     height: 100vh;
-    right: 0;
-    top: 0;
+    right: -150%;
+    top: -105%;
+    z-index: -1;
     padding: 0 5px;
-    transition: all .5s;
     opacity: 0;
     visibility: hidden;
 }
 .sidebar.active{
+    transform-origin: bottom;
     visibility: visible;
     opacity: 1;
+    transition: all .5s;
 }
 .sidebar ul{
-    margin-top: 60%;
+    margin-top: 70%;
     padding: 0;
 }
 .sidebar ul li {
@@ -24,7 +26,7 @@
 }
 .sidebar ul li a{
     color: #fff !important;
-    font-size: 1.3rem;
+    font-size: 1.2rem;
     text-decoration: none;
     display: block;
     padding: 10px 15px;
@@ -35,17 +37,15 @@
     color: #fff;
     background: rgba(255, 255, 255, 0.075);
 }
+.sidebaar{
+    position: absolute;
+    right: 2%;
+}
 .sidebaar svg{
     cursor: pointer;
-    margin-top: .15rem;
-    position: absolute;
-    font-size: 35px;
+    font-size: 40px;
     color: #fff;
-    right: 17%;
     transition: all .5s;
-}
-.sidebaar svg:hover{
-    transform: translateY(-5px);
 }
 
 @media screen and (max-width:1024px){

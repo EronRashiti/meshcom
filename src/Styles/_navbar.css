@@ -8,21 +8,24 @@
 }
 .main-nav{
     height: auto;
-    display: grid;
-    align-items:flex-end;
-    grid-template-columns: 1fr 4fr 1fr;
+    display: flex;
+    align-items: baseline;
 }
 .nav-logo{
-    transition: all .5s;
+    position: absolute;
+    left: 2%;
 }
-.nav-logo:hover{
-    transform: translateY(-8px);
+.menu-link{
+    position: absolute;
+    left: 0;
+    right: 0;
 }
 .menu-link ul{
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
 }
 .menu-link ul li{
+    margin-left: 5%;
     list-style: none;
     transition: all .5s;
 }
@@ -94,20 +97,32 @@
     margin: 5px;
 }
 
+.close_line3{
+    margin-top: 10px;
+    cursor: pointer;
+    width: 40px;
+    background-color: #fff;
+    height: 4px;
+    border-radius: 3px;
+}
+
 .close_line1{
     cursor: pointer;
     width: 25px;
     background-color: #fff;
-    height: 2px;
+    height: 2.5px;
+    margin-top: 10px;
+    margin-right: 6px;
     border-radius: 3px;
 }
 .close_line2{
     cursor: pointer;
-    width: 25px;
+    width: 26px;
     background-color: #fff;
     height: 2.5px;
     border-radius: 3px;
 }
+
 
 @media screen and (max-width:1024px){
     .menu-link ul li a{
@@ -137,8 +152,8 @@
     .menu-link ul {
         position: absolute;
         right: 0;
-        height: 90vh;
-        top: 10vh;
+        height: 100vh;
+        top: 0;
         background-color: #011126;
         display: flex;
         flex-direction: column;
@@ -169,15 +184,45 @@
         display: block;
         cursor: pointer;
     }
-    .main-nav{
-        grid-template-columns: .5fr 7fr .5fr;
-        align-items: center;
-    }   
     .container{
         max-width: 768px;
     }
 }
 
 @media screen and (max-width:768px){
-   
+    .nav-logo{
+        left: 3%;
+    }
+   .burger{
+       position: absolute;
+       right: 3%;
+    }
+   .menu-link{
+        right: 0;
+        transition: ease-in 1s;
+        height: 100vh;
+        top: 0; 
+    }
+    .menu-link ul{
+        width: 100%;
+        height: 100vh;
+        right: 0;
+        top: 0;
+        transition: all .5s ease-in-out !important;
+    }
+    .menu-link.closed ul{
+        right: -100%;
+        transition: all .5s ease-in-out !important;
+    } 
+    .menu-link ul li a{
+        font-size: 1rem;
+    }
+    .menu-link ul li {
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+    }
+    .menu-link ul li a:active, .active{
+        color: #00507D !important;
+        background: none !important;
+    }
 }

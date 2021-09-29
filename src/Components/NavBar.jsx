@@ -3,6 +3,7 @@ import LOGO from '../Assets/mesh-com-logo.svg';
 import { NavLink } from 'react-router-dom';
 import Sidenav from './Sidenav';
 import { CgMenuRight } from 'react-icons/cg';
+import { CgClose } from 'react-icons/cg';
 import { Link } from 'react-router-dom';
     
 function NavBar() {
@@ -16,8 +17,6 @@ function NavBar() {
 
     return (
             <nav className="nav">
-                <div className="container">
-                    <div className="main-nav">
                         <Link to="/">
                         <div className="nav-logo">
                             <a id="logo" alt="">
@@ -42,20 +41,20 @@ function NavBar() {
                                 </li>
                             </ul>
                         </div>
-
                         <div className="burger" onClick={handleClick} >
                             <div className={clicked ? "close_line1" : "burger_line1"}></div>
                             <div className={clicked ? "" : "burger_line2"}></div>
                             <div className={clicked ? "close_line2 " : "burger_line3"}></div>
                         </div>
-                    </div>
-                    
-                </div>
-                        <div className="sidebaar">
-                            <CgMenuRight onClick={()=> setShowNav(!showNav)}/>
-                            <Sidenav show={showNav} />
-                        </div>
+
+
+                        <div className="sidebaar" onClick={handleClick}>
+                        <CgMenuRight onClick={()=> setShowNav(!showNav)}  className={clicked ? "close_line3" : "sidebaar"}/>
+                        <Sidenav show={showNav} />
+                        </div>                   
              </nav>
+
+            
     )
 }
 

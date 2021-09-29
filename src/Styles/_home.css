@@ -319,6 +319,9 @@
     .home-section1{
         align-items: baseline;
     }
+    .player div{
+        width: 105% !important;
+    }
     #widget2{
         width: 50%;
     }
